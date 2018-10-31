@@ -13,7 +13,7 @@ Use <b>@Qualified</b> to specify which implementation you want to be injected in
 
 Also, if you use the name of the bean as the name of the property, it will be found. It can be used instead of <b>@Qualifier</b> in some situations, but it's probably better to use <b>@Qualifier</b>.
 
-Example:
+<b>Example:</b>
 
 <code>
     @Controller
