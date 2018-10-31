@@ -13,7 +13,7 @@ We can mark class as a bean using one of this annotations:
 - @Service 
 - @Repository 
 - @Component
-- @Bean(for the method which returned an instance which will be registered as a bean within a BeanFactory) in class marked as @Configuration
+- @Bean(for the method which return an instance which will be registered as a bean within a BeanFactory) in class marked as @Configuration
 
 @Autowire is used to wire the bean(usually the interface implementation) with the filed inside of the another bean(marked with one of the annotations which i mentioned above).
 You don't need to use this annotation for the Constructor DI, it do autowiring automatic since around 4.2, but it's a good habit to use it.
