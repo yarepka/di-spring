@@ -1,7 +1,8 @@
 package guru.springframework.dispring.controllers;
 
-import guru.springframework.dispring.services.GreetingServiceImpl;
+import guru.springframework.dispring.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -10,8 +11,9 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
-    @Autowired /* Field injection is not recommended anymore */
-    public GreetingServiceImpl greetingService;
+    @Autowired
+    @Qualifier("propertyGreetingService") /* Field injection is not recommended anymore */
+    public GreetingService greetingService;
 
     public String sayHello() {
         return greetingService.sayGreeting();

@@ -1,22 +1,29 @@
-# Dependency Injection using Spring Framework.
+# Dependency Injection using Spring Framework and @Qualified annotation.
 
-So.. we basically trying to get the beans from Application Context in DiSpringApplication class, so we can run the sayHello() method of each bean. 
+In our case, using only @Autowired will cause the problem.
 
-Each of this classes represents the way of Dependency Injection:
+Required a single bean, but 3 were found:
+- constructorGreetingService
+- propertyGreetingService
+- setterGreetingService
 
-- Constructor Dependency Injection
-- Setter(or method) Dependency Injection
-- Property Dependency Injection (not recommended anymore) 
+Use @Qualified to specify which implementation you want to be injected in the bean.
 
-We can mark class as a bean using one of this annotations: 
-- @Controller
-- @Service 
-- @Repository 
-- @Component
-- @Bean(for the method which return an instance which will be registered as a bean within a BeanFactory) in class marked as @Configuration
+@Qualifier helps to mark which dependency you want to be injected when there are more than one can be injected.
 
-@Autowire is used to wire the bean(usually the interface implementation) with the filed inside of the another bean(marked with one of the annotations which i mentioned above).
-You don't need to use this annotation for the Constructor DI, it do autowiring automatic since around 4.2, but it's a good habit to use it.
+Also, if you use the name of the bean as the name of the property, it will be found. It can be used instead of @Qualifier in some situations, but it's probably better to use @Qualifier.
 
-What's happening is that Spring comes up. It looks at our annotated classes and determining the dependencies and wiring things together. It's creating beans, objects for us, then we run the program and asking the Spring Context to give us fully configured bean(s), so we can run sayHello() method on it and get that output to the console.    
+Example:
 
+<code>
+    @Controller
+  
+    public class PropertyInjectedController {
+        @Autowired
+        public GreetingService propertyGreetingService;
+        
+        public String sayHello() {
+            return greetingServiceImpl.sayGreeting();
+        }
+    }
+</code>
