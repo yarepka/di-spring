@@ -1,6 +1,28 @@
-# Dependency Injection using Spring Framework and @Primary annotation
+# Dependency Injection using Spring Framework. @Profile annotation.
 
-If there is more than one bean of the same type(and no @Qualifier), the bean with the <b>@Primary</b> annotation will be injected.
+We mark the beans as a part of some profile, in our example <b>@Profile("ru")</b> and <b>@Profile("en")</b>,
+for having greetings in different languages, in our example Russian and English.
 
-<b>DI with @Primary has higher priority than DI with property name which is matches the bean name</b>
+Profile have 2 states:
+- <b>Active</b>
+- <b>Unactive</b>
+
+We can set this state through the application.properties which is part of resources directory, using:
+
+- <b>For Russian:</b>
+
+<code>
+    spring.profiles.active=ru
+</code><br><br>
+
+
+- <b>For English:</b>
+
+<code>
+spring.profiles.active=en
+</code>
+<br><br>
+Example of using profiles is changing between MySQL DB and H2 In-memory DB 
+
+
 
