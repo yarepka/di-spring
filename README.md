@@ -3,9 +3,9 @@
 In our case, using only <b>@Autowired</b> will cause the problem.
 
 Required a single bean, but 3 were found:
-- constructorGreetingService
-- propertyGreetingService
-- setterGreetingService
+- <b>constructorGreetingService</b>
+- <b>propertyGreetingService</b>
+- <b>setterGreetingService</b>
 
 Use <b>@Qualified</b> to specify which implementation you want to be injected in the bean.
 
