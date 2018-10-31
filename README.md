@@ -21,7 +21,7 @@ or
 
 Depends on which of profiles you want to set as a default one.
 
-<b>Multiple profiles can me active at the same time.<b>
+<b>Multiple profiles can be active at the same time.<b>
 
 
 
