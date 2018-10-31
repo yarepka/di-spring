@@ -1,28 +1,27 @@
-# Dependency Injection using Spring Framework. @Profile annotation.
+# Default profile behavior for Spring Context. More on @Profile annotation.
 
-We mark the beans as a part of some profile, in our example <b>@Profile("ru")</b> and <b>@Profile("en")</b>,
-for having greetings in different languages, in our example Russian and English.
+When application.properties:
 
-Profile have 2 states:
-- <b>Active</b>
-- <b>Unactive</b>
+- <code>spring.profiles.active=</code>
 
-We can set this state through the application.properties which is part of resources directory, using:
+or
+- empty
 
-- <b>For Russian:</b>
+it means that <b>no profiles active</b>, so we can set the default profile like that:
 
-<code>
-    spring.profiles.active=ru
-</code><br><br>
+<code>@Profile({"en", "default"})</code>
+
+or 
+
+<code>@Profile({"de", "default"})</code>
+
+or
+
+<code>@Profile({"ru", "default"})</code>
+
+Depends on which of profiles you want to set as a default one.
 
 
-- <b>For English:</b>
-
-<code>
-spring.profiles.active=en
-</code>
-<br><br>
-Example of using profiles is changing between MySQL DB and H2 In-memory DB 
 
 
 
