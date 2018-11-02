@@ -25,9 +25,9 @@
 
 <h4>Callback interfaces:<h4>
 
-- <b>InitializingBean</b> - <b>afterPropertiesSet</b> <i>method called after properties are set.</i>
+- <b>InitializingBean - afterPropertiesSet</b> <i>method called after properties are set.</i>
 
-- <b>DisposableBean</b> - <b>destroy</b> <i>method called during bean destruction in shutdown.</i>
+- <b>DisposableBean - destroy</b> <i>method called during bean destruction in shutdown.</i>
 
 <h4>Life Cycle Annotations</h4>
 
