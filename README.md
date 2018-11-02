@@ -1,7 +1,5 @@
 # Spring bean lifecycle.
 
-
-Spring Bean Life Cycle:
 <h4>Bean initialization process:</h4>
 <ol>
     <li><b>Instantiate</b> - <i>constructer is called.</i></li>
