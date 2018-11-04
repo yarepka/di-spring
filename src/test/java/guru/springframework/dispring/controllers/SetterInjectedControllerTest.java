@@ -1,6 +1,6 @@
 package guru.springframework.dispring.controllers;
 
-import guru.springframework.dispring.services.SetterGreetingService;
+import guru.services.SetterGreetingService;
 import org.junit.Before;
 import org.junit.Test;
 

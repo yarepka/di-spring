@@ -1,6 +1,6 @@
 package guru.springframework.dispring.controllers;
 
-import guru.springframework.dispring.services.ConstructorGreetingService;
+import guru.services.ConstructorGreetingService;
 import org.junit.Before;
 import org.junit.Test;
 

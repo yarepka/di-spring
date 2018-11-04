@@ -1,6 +1,6 @@
 package guru.springframework.dispring.controllers;
 
-import guru.springframework.dispring.services.GreetingService;
+import guru.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
