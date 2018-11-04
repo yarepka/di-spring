@@ -1,6 +1,6 @@
 package guru.springframework.dispring.controllers;
 
-import guru.services.GreetingService;
+import guru.springframework.dispring.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller; // mark class as a spring component
 
