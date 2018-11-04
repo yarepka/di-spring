@@ -1,4 +1,4 @@
-#Beans Factory and Java bean configuration.
+# Beans Factory and Java bean configuration.
 
 We have <b>GreetingServiceFactory</b> class which is a factory for <b>GreetingService</b> implementation objects.
 Depends on the argument in <b>createGreetingService(String lang)</b> method, it returns the <b>GreetingService</b> implementation of some profile("en", "de", "ru").
