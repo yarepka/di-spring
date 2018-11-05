@@ -1,5 +1,7 @@
-#Property file and config.
+# How to access the OS environment values? 
 
-<b>@PropertySource</b> is used to set the path for the properties file, so we can can inject the values, using <b>@Value</b> annotation.
+The way we can do it is by creating the field of the class <b>Environment</b> with <b>@Autowired</b> annotation and running the <b>getProperty(String key)</b> method.
 
-PropertySourcesPlaceholderConfigurer reading the property file, scans for properties and enable us the @Value annotation, BUT it seems like it works good without this class.
+We can also set evnironment properties through the Intelij IDEA and access them on the need.
+
+We can store db settings in property files, company name, server settings etc., that we can easily change through one file, property file is really handy thing.
