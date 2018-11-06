@@ -13,3 +13,8 @@ The way we can set values for different profiles using .properties file - is to 
 
 <b>For code example, check application.properties, application-de.properties, application-ru.properties, application-en.properties files in the resources directory.</b>
 
+<hr>
+
+Usage example: We have profiles for different db's: MySQL, H2, MangoDB etc. We also have property files with properties for db connection, which we set through the <b>application.yml</b> or <b>application-{$profile}.properties</b> file(s).
+Changing <b>spring.profiles.active=#MySQL #H2 #MangoDB</b> we managing the connection.
+
