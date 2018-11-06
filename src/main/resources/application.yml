@@ -1,4 +1,32 @@
 jms:
-  username: Lobo19
-  password: Leather
-  url: https://fightdepression.com
+  username:
+  password:
+  url:
+
+---
+#property values for @Profile("de")
+spring:
+    profiles: de
+jms:
+  username: JMS Username in German
+  password: JMS Password in German
+  url: JMS Fancy German URL 2018
+
+---
+#property values for @Profile("en")
+spring:
+    profiles: en
+jms:
+  username: JMS Username in English
+  password: JMS Password in English
+  url: JMS URL English
+
+---
+#property values for @Profile("ru")
+spring:
+    profiles: ru
+jms:
+  username: JMS Username in Russian
+  password: JMS Password in Russian
+  url: JMS URL in Russian
+
