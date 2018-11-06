@@ -1,7 +1,14 @@
-# How to access the OS environment values? 
+# Multiple Property files
 
-The way we can do it is by creating the field of the class <b>Environment</b> with <b>@Autowired</b> annotation and running the <b>getProperty(String key)</b> method.
+You can set multiple property files with <b>@PropertySources()</b> annotation.
 
-We can also set evnironment properties through the Intelij IDEA and access them on the need.
+Example:<code>
+    @PropertySource({@PropertySource("classpath:YOUR_PROPERTY_FILE"), @PropertySource("classpath:YOUR_SECOND_PROPERTY_FILE")})
+</code>
 
-We can store db settings in property files, company name, server settings etc., that we can easily change through one file, property file is really handy thing.
+You can also do that with <b>@PropertySource</b> annotation. 
+
+Example:<code>
+    @PropertySource({"YOUR_PROP_FILE", "YOUR_SECOND_PROP_FILE})
+</code>
+ 
