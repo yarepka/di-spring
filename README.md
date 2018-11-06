@@ -1,5 +1,4 @@
-# Spring Boot Application.properties
+# YAML() introduction.
 
-You can put custom properties in application.properties file.
-You'll not need <b>@PropertySource</b> annotation anymore, you can get an access with <b>@Value</b> annotation, application property file will be recognized automatically.
+YAML used to describe data structures. Check <b>example.yml</b> file for code examples.
  

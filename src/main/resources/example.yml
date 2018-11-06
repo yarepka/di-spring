@@ -1,0 +1,42 @@
+# this is comment
+
+name: Roman
+
+names: #Comment
+    - Roman
+    - Gabe
+    - Ringo
+    - Max
+
+pound_sign: "#"
+
+book:
+    author: John Steinback
+    publisher: Pravda
+    book_name: East of Eden
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, FALSE
+
+string_val: "To be or not to be"
+
+colon_string: "my courses: singing, programming, wood working"
+
+include_new_lines: |
+  Sammy was low
+  Just watching the show
+  Over and over again
+  Knew it was time
+  He'd made up his mind
+  To leave his dead life behind
+
+ignore_new_lines: >
+  this is
+  just one long
+  string
+
